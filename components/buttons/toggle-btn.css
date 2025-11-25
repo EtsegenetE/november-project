@@ -1,0 +1,33 @@
+.login-btn {
+  display: flex;
+  width: 100%;
+  background: #f2f4f7;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 5px;
+  align-items: center;
+}
+
+.login-btn button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.active-btn {
+  background: #ffffff !important;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-mode .next {
+  background: #2ecc71;
+}
+
+.toggle {
+  font-size: 15px;
+}

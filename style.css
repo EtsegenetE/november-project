@@ -1,0 +1,214 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --card-width: 450px;
+  --bg: linear-gradient(180deg, #f3f6ff 0%, #eef5ff 100%);
+  --primary: #4c7bff;
+  --accent: #fbc300;
+  --muted: #757d89;
+  --input-border: #e3e6ed;
+}
+
+/* Page */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  height: 100vh;
+}
+
+#mainContainer {
+  width: 400px;
+  padding: 30px 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* container card centered */
+.page-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: var(--card-width);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(15, 40, 80, 0.12);
+  padding: 28px;
+}
+
+/* header */
+.header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.header .top-img {
+  width: 84px;
+  margin-bottom: 8px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.header p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* toggle */
+.login-btn {
+  display: flex;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 18px 0 18px;
+}
+.toggle {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.active-btn {
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(15, 40, 80, 0.06);
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* input fields base */
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid var(--input-border);
+  font-size: 15px;
+  background: #fff;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 6px rgba(76, 123, 255, 0.06);
+}
+
+/* fullName (initially hidden) */
+.hidden-form {
+  display: none;
+}
+
+/* small label spacing */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #222;
+}
+
+/* email component tweaks */
+.email-wrapper {
+  position: relative;
+  margin-top: 6px;
+}
+.email-img {
+  position: absolute;
+  left: 12px;
+  top: 42px;
+  width: 20px;
+  pointer-events: none;
+}
+.email.input-field {
+  padding-left: 44px;
+}
+
+/* password component */
+.password-container {
+  position: relative;
+  margin-top: 6px;
+}
+.lock {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.lock img {
+  width: 20px;
+  height: 20px;
+}
+.password.input-field {
+  padding-right: 44px;
+}
+
+/* footer buttons */
+.footer-btn {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+.btn {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 2px solid var(--input-border);
+  cursor: pointer;
+  font-weight: 600;
+}
+.help {
+  background: #fff;
+}
+.next {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--input-border);
+}
+
+/* footer text */
+.footer {
+  margin-top: 14px;
+  color: #8b8f96;
+  font-size: 13px;
+  text-align: center;
+}
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .header .top-img {
+    width: 64px;
+  }
+}

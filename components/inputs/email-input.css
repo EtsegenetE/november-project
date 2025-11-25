@@ -1,0 +1,38 @@
+.email-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.email-wrapper label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.email-img {
+  position: absolute;
+  width: 20px;
+  top: 35px;
+  left: 12px;
+}
+
+#emailInput {
+  background-color: white;
+}
+input.email {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border: 2px solid #e2e4e9;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+input.email:focus {
+  border-color: #448cff;
+  box-shadow: 0px 0px 0px 3px rgba(68, 140, 255, 0.25);
+}
+
+.email.input-field {
+  padding-left: 44px;
+}
