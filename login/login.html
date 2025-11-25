@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          class="top-img"
+          src="../images/login-image.png"
+          alt="login image"
+        />
+        <h1>Welcome Back!</h1>
+        <p>Enter your details to access your account</p>
+      </div>
+      <div class="login-btn">
+        <button class="login active-btn" id="login">Login</button>
+        <button class="signin" id="signin">Sign Up</button>
+      </div>
+      <form class="form">
+        <div id="fullName" class="hidden-form">
+          <label>Full Name *</label>
+          <img
+            class="name"
+            src="../images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg"
+            alt=""
+          />
+          <input
+            type="text"
+            class="fullname input-field"
+            placeholder="John Doe"
+          />
+        </div>
+        <label class="label">Email Address *</label>
+        <img class="email-img" src="../images/mail.png" alt="" />
+        <input
+          id="emailInput"
+          class="email input-field"
+          type="email"
+          placeholder="hello@example.com"
+          required
+        />
+        <label class="label">password *</label>
+        <div class="password-container">
+          <button id="lockBtn" class="lock">
+            <img id="lockImg" src="../images/lock.png" alt="password hiden" />
+          </button>
+          <input
+            id="passwordInput"
+            class="password input-field"
+            type="password"
+            placeholder="Enter password"
+            required
+          />
+        </div>
+        <div class="footer-btn">
+          <button class="help btn">
+            <img src="../images/help.png" alt="help icon" /> Help?
+          </button>
+          <button class="next btn" id="nextBtn">Next Step</button>
+        </div>
+        <div class="footer">
+          <p>
+            By continuting, you agree to our <a href="#">Terms of Service</a>&
+            <a href="#">Privacy policy</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
