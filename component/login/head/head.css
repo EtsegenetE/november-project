@@ -1,0 +1,11 @@
+.login-header {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  line-height: 8px;
+}
+
+.login-header img {
+    width: 100px;
+}

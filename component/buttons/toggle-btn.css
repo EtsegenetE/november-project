@@ -1,0 +1,37 @@
+.login-btn {
+  background-color: #f3f4f6;
+  width: 400px;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.login-btn button {
+  cursor: pointer;
+  font-size: var(--primary-font);
+  font-weight: 600;
+  background-color: transparent; /* FIXED */
+}
+
+.active-btn {
+  background: white !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+  width: 186px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  background-color: transparent; /* FIX */
+}
+
+.signin {
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent; /* Consistency */
+}

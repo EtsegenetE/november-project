@@ -1,0 +1,150 @@
+.main-wrapper {
+  margin: 20px;
+  margin-right: 50px;
+}
+
+/* .main-head {
+    top: -15px;
+} */
+.main-display {
+  display: flex;
+  gap: 30px;
+}
+
+.box-wrap {
+  width: 250px;
+  height: 150px;
+  background-color: #ffff;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.box-wrap:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.box img {
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.main-half {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  height: 350px;
+}
+
+.later {
+  line-height: 5px;
+  padding-left: 15px;
+}
+
+.recent-task,
+.quick-action {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.recent-head {
+  display: flex;
+}
+
+.recent-head img {
+  width: 15px;
+  height: 15px;
+  padding-top: 17px;
+  padding-right: 5px;
+  padding-left: 20px;
+}
+
+.recent-img {
+  line-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.recent-img img {
+  width: 30px;
+}
+
+.quick-head {
+  display: flex;
+}
+
+.quick-head img {
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 5px;
+  height: 150px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.new-task,
+.track-expense,
+.write-note {
+  background-color: #f8f9fa;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(231, 230, 230);
+  display: flex;
+}
+
+.new-task:hover,
+.track-expense:hover,
+.write-note:hover {
+  background-color: rgb(108, 187, 201);
+}
+
+.new-task:hover h4,
+.track-expense:hover h4,
+.write-note:hover h4 {
+  color: #ffffff;
+}
+
+.new-task img {
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.box-flex {
+  padding-left: 15px;
+}

@@ -1,0 +1,38 @@
+.footer-container {
+    padding-left: 10px;
+    width: 95%;
+}
+
+.footer-btn {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  border-radius: 8px;
+  width: 50%;
+  border: 2px solid #e3e6ed;
+  margin-top: 28px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.help {
+  background-color: #ffffff;
+}
+
+.next {
+  background-color: #fbc300;
+}
+
+.footer {
+  width: 90%;
+  font-size: 12px;
+  margin: 8px 20px;
+  font-family: var(--font-family);
+}
