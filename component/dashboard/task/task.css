@@ -1,0 +1,152 @@
+.task-wrapper {
+    background-color: #F9FAFB;
+}
+
+.container {
+    border: 1px solid lightgray;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-mgmt {
+    display: flex;
+    gap: 15px;
+    background-color: #eaeaea; 
+    padding: 20px;
+    border-radius: 8px 8px 0 0; 
+    align-items: center;
+}
+
+.task-mgmt img {
+    width: 55px;
+    height: 55px;
+}
+
+.head-mgmt h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.head-mgmt p {
+    margin: 0;
+    color: rgba(110, 107, 107, 0.8);
+}
+
+/* Top Row: Buttons */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #eaeaea;
+}
+
+.toggle-buttons button.active {
+    background: #d2d2d2;
+}
+
+.add-task-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Task Counts */
+.task-counts {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.task-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 6px;
+    width: 120px; 
+}
+
+.active-count {
+    border-right: 1px solid black;
+    border-radius: 0;
+}
+
+#completed-count {
+    color: #28c840;
+}
+
+.task-count h2.count {
+    margin: 0;
+    font-size: 28px;
+}
+
+.task-count p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Tasks Section */
+.tasks-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    flex: 1;
+}
+
+.tasks-section section {
+    flex: 1;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-added {
+    border: 2px dashed #007bff;
+    max-height: 150px;
+    background-color: #e2e8f8;
+}
+
+.completed {
+    max-height: 180px;
+    border: 1px solid lightgray;
+}
+
+.tasks-section section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-section section li {
+    padding: 5px 0;
+    cursor: pointer;
+}

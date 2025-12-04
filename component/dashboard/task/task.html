@@ -1,0 +1,53 @@
+<div class="task-wrapper">
+  <div class="container">
+    <!-- Task Header -->
+    <div class="task-mgmt">
+      <img src="/images/login-image.png" alt="Logo" />
+      <div class="head-mgmt">
+        <h3>Task Management</h3>
+        <p>Manage and track your tasks</p>
+      </div>
+    </div>
+
+    <!-- Top row: Toggle buttons and Add Task -->
+    <div class="task-header">
+      <div class="toggle-buttons">
+        <button class="toggle-btn active">
+          <img src="/images/tasks.png" alt="Tasks" />
+          My Tasks
+        </button>
+        <button class="toggle-btn">
+          <img src="/images/AI.png" alt="AI" />
+          AI Summary
+        </button>
+      </div>
+      <button class="add-task-btn">+ Add Task</button>
+    </div>
+
+    <!-- Task counts -->
+    <div class="task-counts">
+      <div class="task-count active-count">
+        <h2 class="count" id="active-count">0</h2>
+        <p>Active Tasks</p>
+      </div>
+      <div class="task-count completed-count">
+        <h2 class="count" id="completed-count">0</h2>
+        <p>Completed</p>
+      </div>
+    </div>
+
+    <!-- Tasks Sections -->
+    <div class="tasks-section">
+      <section class="task-added">
+        <p>Active Tasks</p>
+        <ul id="active-tasks"></ul>
+      </section>
+      <section class="completed">
+        <p>Completed Tasks</p>
+        <ul id="completed-tasks"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="task.js"></script>
+</div>
