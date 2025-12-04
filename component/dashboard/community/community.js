@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let posts = [];
 
-  // Add post
+  
   postBtn.addEventListener("click", () => {
     const text = postInput.value.trim();
     if (!text) return;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderPosts();
   });
 
-  // Render posts dynamically
+
   function renderPosts() {
     postsSection.innerHTML = "";
 
@@ -33,6 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initial render
   renderPosts();
 });

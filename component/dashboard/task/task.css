@@ -36,7 +36,7 @@
     color: rgba(110, 107, 107, 0.8);
 }
 
-/* Top Row: Buttons */
+
 .task-header {
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@
     cursor: pointer;
 }
 
-/* Task Counts */
+
 .task-counts {
     display: flex;
     gap: 20px;
@@ -111,7 +111,7 @@
     text-align: center;
 }
 
-/* Tasks Section */
+
 .tasks-section {
     display: flex;
     flex-direction: column;

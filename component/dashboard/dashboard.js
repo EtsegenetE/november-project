@@ -1,4 +1,4 @@
-// Load HTML components dynamically
+
 async function loadComponent(target, file, callback) {
   const container = document.querySelector(target);
   if (!container) return;
@@ -14,10 +14,10 @@ async function loadComponent(target, file, callback) {
   }
 }
 
-// Get saved page or default
+
 const savedPage = localStorage.getItem("activePage") || "mainbody/main.html";
 
-// Load sidebar
+
 loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
   const emailDisplay = document.querySelector(".email-display");
   const userName = localStorage.getItem("userName") || "User";
@@ -36,7 +36,7 @@ loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
     `;
   }
 
-  // Sidebar link click actions
+  
   const links = document.querySelectorAll(".list-order a");
 
   links.forEach((link) => {
@@ -46,12 +46,12 @@ loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
       const page = link.getAttribute("data-page");
 
       if (page) {
-        // Save selected page
+     
         localStorage.setItem("activePage", page);
 
-        // Load the page
+
         loadComponent(".main", page, () => {
-          // If the loaded page is the Dashboard, apply greeting
+          
           if (page === "mainbody/main.html") {
             const mainHeading = document.querySelector(".main-head h2");
             const userName = localStorage.getItem("userName") || "User";
@@ -60,7 +60,7 @@ loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
             }
           }
 
-          // If the loaded page is the Task page, load task.js
+        
           if (page === "task/task.html") {
             const script = document.createElement("script");
             script.src = "task/task.js";
@@ -69,15 +69,15 @@ loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
         });
       }
 
-      // Remove active from all lists
+      
       document.querySelectorAll(".list").forEach(li => li.classList.remove("active"));
 
-      // Add active to clicked one
+  
       link.parentElement.classList.add("active");
     });
   });
 
-  // Apply active to saved page
+
   links.forEach((link) => {
     if (link.getAttribute("data-page") === savedPage) {
       link.parentElement.classList.add("active");
@@ -85,7 +85,7 @@ loadComponent(".sidebar-container", "sidebar/sidebar.html", () => {
   });
 });
 
-// Load saved page on refresh
+
 loadComponent(".main", savedPage, () => {
   if (savedPage === "mainbody/main.html") {
     const mainHeading = document.querySelector(".main-head h2");
@@ -102,7 +102,7 @@ loadComponent(".main", savedPage, () => {
   }
 });
 
-// Sidebar toggle (mobile)
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const sidebar = document.querySelector(".sidebar-container");

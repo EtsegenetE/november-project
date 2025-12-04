@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const activeCount = document.getElementById("active-count");
   const completedCount = document.getElementById("completed-count");
 
-  let tasks = []; // store tasks
+  let tasks = []; 
 
-  // Toggle buttons
   toggleButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       toggleButtons.forEach(b => b.classList.remove("active"));
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Add Task button
   addTaskBtn.addEventListener("click", () => {
     const taskName = prompt("Enter task name:");
     if (!taskName) return;
@@ -26,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTasks();
   });
 
-  // Render tasks
+
   function renderTasks() {
     activeTasksList.innerHTML = "";
     completedTasksList.innerHTML = "";
@@ -44,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         activeTasksList.appendChild(li);
         active++;
-        // Click to mark completed
+        
         li.addEventListener("click", () => {
           task.completed = true;
           renderTasks();
@@ -56,6 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     completedCount.textContent = completed;
   }
 
-  // Initial render
+
   renderTasks();
 });
